@@ -5,7 +5,7 @@ import (
 	"log"
 	"strings"
 	"sync"
-	"go-chatbot/api"
+	api "go-chatbot/API"
 	"github.com/bwmarrin/discordgo"
 )
 
@@ -79,4 +79,12 @@ func MessageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		userStates.m[m.Author.ID] = "awaiting_search_query"
 		userStates.Unlock()
 	}
+	if m.Content == "!youtube" {
+		s.ChannelMessageSend(m.ChannelID, "Ne aramak istersiniz?")
+
+		userStates.Lock()
+		userStates.m[m.Author.ID] = "awaiting_search_query"
+		userStates.Unlock()
+	}
+
 }
