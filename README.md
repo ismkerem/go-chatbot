@@ -6,11 +6,7 @@ This project demonstrates how to create a simple Discord chatbot using the Go pr
 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Configuration](#configuration)
-- [Running the Bot](#running-the-bot)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Prerequisites
 
