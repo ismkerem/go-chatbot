@@ -25,11 +25,11 @@ Before you begin, ensure you have the following installed:
    cd discord-chatbot-go
 ## commands
 2. Commands
-| Command | Description |
+| Commands  | Description  |
 |---|---|
-| !merhaba | Responds with "merhaba" (hello in Turkish). |
-| !ara <search term> | Searches the web using Google and provides results. |
-| !youtube <search term> | Searches for videos on YouTube. (Functionality to be implemented) |
-| !github <search term> | Searches for repositories on GitHub. (Functionality to be implemented) |
-| !library <search term> | Searches for library resources. (Functionality to be implemented) |
-| !çevir <text> | T
+| !merhaba  | Responds with "merhaba".  |
+| !ara  | Asks what you want to search for and performs a Google search.|
+|!youtube   |Asks what you want to search for and performs a YouTube search.   |
+|!github   |Asks what you want to search for and performs a GitHub search.   |
+|!library   |Asks what you want to search for and performs a library search.   |
+|!çevir  |Asks for text and translates it.   |
