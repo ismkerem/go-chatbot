@@ -6,7 +6,7 @@ This project demonstrates how to create a simple Discord chatbot using the Go pr
 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-
+- [Commands](#commands)
 
 ## Prerequisites
 
@@ -23,4 +23,13 @@ Before you begin, ensure you have the following installed:
    ```sh
    git clone https://github.com/yourusername/discord-chatbot-go.git
    cd discord-chatbot-go
-
+## commands
+2. Commands
+| Command | Description |
+|---|---|
+| !merhaba | Responds with "merhaba" (hello in Turkish). |
+| !ara <search term> | Searches the web using Google and provides results. |
+| !youtube <search term> | Searches for videos on YouTube. (Functionality to be implemented) |
+| !github <search term> | Searches for repositories on GitHub. (Functionality to be implemented) |
+| !library <search term> | Searches for library resources. (Functionality to be implemented) |
+| !çevir <text> | T
