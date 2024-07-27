@@ -12,13 +12,11 @@ import (
 )
 
 func main() {
-	// .env dosyasındaki çevresel değişkenleri yükleyin
 	err := godotenv.Load()
 	if err != nil {
 		log.Fatalf("Error loading .env file")
 	}
 
-	// Bot token'ınızı çevresel değişkenden alın
 	token := os.Getenv("DISCORD_BOT_TOKEN")
 	if token == "" {
 		log.Fatalf("No token provided. Please set DISCORD_BOT_TOKEN environment variable.")
@@ -28,16 +26,13 @@ func main() {
 		log.Fatalf("No token provided. Please set WEATHER_API_TOKEN environment variable.")
 	}
 
-	// Bot oturumunu başlatın
 	dg, err := discordgo.New("Bot " + token)
 	if err != nil {
 		log.Fatalf("Error creating Discord session: %v", err)
 	}
 
-	// Mesaj oluşturma olayını işleyin
 	dg.AddHandler(message.MessageCreate)
 
-	// Botu başlatın
 	err = dg.Open()
 	if err != nil {
 		log.Fatalf("Error opening connection: %v", err)
