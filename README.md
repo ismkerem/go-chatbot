@@ -24,7 +24,6 @@ Before you begin, ensure you have the following installed:
    git clone https://github.com/yourusername/discord-chatbot-go.git
    cd discord-chatbot-go
 ## commands
-2. Commands
 | Commands  | Description  |
 |---|---|
 | !merhaba  | Responds with "merhaba".  |
