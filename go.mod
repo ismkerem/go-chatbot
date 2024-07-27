@@ -8,6 +8,12 @@ require (
 )
 
 require (
+	cloud.google.com/go v0.115.0 // indirect
+	cloud.google.com/go/translate v1.10.6 // indirect
+	github.com/google/go-querystring v1.1.0 // indirect
+)
+
+require (
 	cloud.google.com/go/auth v0.7.0 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.2 // indirect
 	cloud.google.com/go/compute/metadata v0.4.0 // indirect
@@ -16,6 +22,7 @@ require (
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
+	github.com/google/go-github v17.0.0+incompatible
 	github.com/google/s2a-go v0.1.7 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.2 // indirect

@@ -20,11 +20,16 @@ type SearchResult struct {
 }
 
 func GoogleSearch(query string) (*SearchResult, error) {
+	maxResults := 5
 	apiKey := os.Getenv("GOOGLE_API_KEY")
 	cx := os.Getenv("SEARCH_ENGINE_ID")
 	if apiKey == "" || cx == "" {
 		return nil, fmt.Errorf("API key or Search Engine ID not set")
 	}
+
+    if maxResults <= 0 {
+        maxResults = 5 // Varsayılan olarak 10 sonuç döndür
+    }
 
 	encodedQuery := url.QueryEscape(query)
 	url := fmt.Sprintf("%s?q=%s&key=%s&cx=%s", searchURL, encodedQuery, apiKey, cx)
